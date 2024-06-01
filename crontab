@@ -1,0 +1,2 @@
+# Recommended update frequency as per https://eff-certbot.readthedocs.io/en/latest/using.html#setting-up-automated-renewal
+0 0,12 * * * /app/update_script.sh

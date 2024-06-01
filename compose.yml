@@ -1,0 +1,13 @@
+services:
+  supercronic:
+    build: .
+    command: supercronic crontab
+    env_file:
+      .env
+    volumes:
+      - letsencrypt:/etc/letsencrypt
+
+volumes:
+  letsencrypt:
+
+
