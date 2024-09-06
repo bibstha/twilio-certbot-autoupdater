@@ -4,7 +4,7 @@ LABEL authors="bibekshrestha@gmail.com"
 ENTRYPOINT []
 WORKDIR /app
 
-RUN apk add --no-cache supercronic
+RUN apk add --no-cache supercronic curl
 COPY crontab .
 
 COPY update_script.sh .
